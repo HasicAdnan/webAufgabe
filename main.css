@@ -1,4 +1,4 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -15,6 +15,10 @@ body {
     background-size: cover;
     margin: 0;
     background-attachment: fixed;
+}
+
+.container {
+    margin: 0 auto;
 }
 
 
@@ -35,9 +39,7 @@ header {
     background: linear-gradient(180deg, rgb(9, 9, 9) 0%, rgb(26, 26, 27) 47%, rgb(50, 50, 50) 100%);
 }
 
-nav {
- 
-}
+
 
 ul li {
     text-decoration: none;
@@ -45,14 +47,14 @@ ul li {
     display: inline-block;
     border-right: 2px solid white;
     padding-right: 20px;
-    
-   
+
+
 }
 
 ul li a {
     text-decoration: none;
-    
-   
+
+
 }
 
 ul li a:hover {
@@ -63,10 +65,11 @@ ul :last-child {
     border-right: none;
 }
 
-main{
+main {
     display: flex;
     justify-content: center;
 }
+
 section {
     width: 800px;
     height: 450px;
@@ -82,7 +85,7 @@ h1 {
     width: auto;
     top: 30%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     display: inline-block;
     z-index: 1;
     color: aliceblue;
@@ -95,7 +98,7 @@ h2 {
     width: auto;
     top: 60%;
     left: 60%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     display: inline-block;
     z-index: 1;
     color: aliceblue;
@@ -129,20 +132,21 @@ h2 {
     position: relative;
     right: 50%;
     background: rgb(0, 0, 0);
-    
+
 }
 
 .art-1:hover {
     transform: rotate(90deg);
     transition-delay: 0.25s;
 }
+
 .art-2:hover {
     transform: rotate(90deg);
     transition-delay: 5s;
 }
 
 h3 {
-   color:rgb(35, 32, 32); 
+    color: rgb(35, 32, 32);
 }
 
 .about {
@@ -152,26 +156,224 @@ h3 {
     width: 900px;
     min-height: 100px;
     align-items: center;
-    display: flex; 
+    display: flex;
     justify-content: center;
     border-radius: 5px;
     z-index: 0;
-    
+
 }
 
 p {
 
     text-align: center;
     color: rgb(35, 33, 33);
-    
+
 }
 
 footer {
     width: auto;
     height: 50px;
     background-color: rgb(40, 45, 32);
-    background: rgb(6,0,0);
-    background: linear-gradient(360deg, rgba(6,0,0,1) 0%, rgba(37,45,38,1) 53%, rgba(248,248,248,1) 100%); 
+    background: rgb(6, 0, 0);
+    background: linear-gradient(360deg, rgba(6, 0, 0, 1) 0%, rgba(37, 45, 38, 1) 53%, rgba(248, 248, 248, 1) 100%);
 }
 
+@media only screen and (max-width: 767.99px) and (min-width: 0px) {
+    .container {
+        max-width: 540px;
+    }
 
+    header {
+        justify-content: center;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+    }
+
+    section {
+        width: 60.60%;
+        height: 42.05%;
+    }
+
+    h1 {
+        font-size: 10vw;
+    }
+
+    h2 {
+        font-size: 7vw;
+    }
+
+    .about {
+        width: 68.18%;
+        height: 44.44%;
+    }
+
+    .art-1:hover {
+        transform: rotate(180deg);
+        transition-delay: 0.25s;
+    }
+
+    p {
+        font-size: 1.5vw;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+    }
+
+    section {
+        width: 60.60%;
+        height: 42.05%;
+    }
+
+    h1 {
+        font-size: 10vw;
+    }
+
+    h2 {
+        font-size: 7vw;
+    }
+
+    .about {
+        width: 68.18%;
+        height: 44.44%;
+    }
+
+    .art-1:hover {
+        transform: rotate(180deg);
+        transition-delay: 0.25s;
+    }
+
+    p {
+        font-size: 1.5vw;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+    }
+
+    section {
+        width: 60.60%;
+        height: 42.05%;
+    }
+
+    h1 {
+        font-size: 10vw;
+    }
+
+    h2 {
+        font-size: 7vw;
+    }
+
+    .about {
+        width: 68.18%;
+        height: 44.44%;
+    }
+
+    .art-2:hover {
+        transform: rotate(90deg);
+        transition-delay: 5s;
+    }
+
+    p {
+        font-size: 1.5vw;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+    }
+
+    section {
+        width: 60.60%;
+        height: 42.05%;
+    }
+
+    h1 {
+        font-size: 10vw;
+    }
+
+    h2 {
+        font-size: 7vw;
+    }
+
+    .about {
+        width: 68.18%;
+        height: 44.44%;
+    }
+
+    .art-2:hover {
+        transform: rotate(90deg);
+        transition-delay: 5s;
+    }
+
+    p {
+        font-size: 1.5vw;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+
+    .main-header {
+        width: 100%;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+    }
+
+    section {
+        width: 60.60%;
+        height: 42.05%;
+    }
+
+    h1 {
+        font-size: 10vw;
+    }
+
+    h2 {
+        font-size: 7vw;
+    }
+
+    .about {
+        width: 68.18%;
+        height: 44.44%;
+    }
+
+    .art-2:hover {
+        transform: rotate(180deg);
+        transition-delay: 5s;
+    }
+
+    p {
+        font-size: 1.5vw;
+    }
+}
